@@ -37,7 +37,7 @@ export class AppComponent {
     this.studentForm = this.currentForm;
     //subscribe to form changes and send the changes to the onValueChanged method
     this.studentForm.valueChanges
-      .subscribe(data => this.onValueChanged());
+      .subscribe(() => this.onValueChanged());
   }
 
   onValueChanged() {
